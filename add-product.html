@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Add Product </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato@display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/add-product.css">
+
+</head>
+<body>
+
+    <img src="images/loading.gif" class="loader" alt="">
+
+    <h1 class="title">ADD PRODUCT</h1>
+
+    <div class="error">
+        <p>Some Error Occured</p>
+    </div>
+
+    <!-- product detail -->
+    <section class="product-section">
+        <!--upload image section-->
+        <div class="image-upload-container">
+            <input type="file" id="upload-image" accept="image/png, image/png" hidden>
+            <label for="upload-image" class="upload-overlay">UPLOAD IMAGE</label>
+            <img class="product-img">
+        </div>
+
+
+        <div class="product-detail">
+            <h1 class="product-title" contenteditable="true" data-placeholder="product name">TANISHKA SOFA</h1>
+            <p class="product-des"  contenteditable="true" data-placeholder="short discription">PERFECT DISPLAY OF LIVING TAKEN TO NEXT LEVEL</p>
+            <div class="ratings disable">
+                <img src="../images/fill star.png" class="star" alt="">
+                <img src="../images/fill star.png" class="star" alt="">
+                <img src="../images/fill star.png" class="star" alt="">
+                <img src="../images/fill star.png" class="star" alt="">
+                <img src="../images/no fill star.png" class="star" alt="">
+                <span class="rating-count">5,566 REVIEWS</span>
+
+            </div>
+            <p class="price" contenteditable="true" data-placeholder="price without $"></p>
+            <div class="btn-container disable">
+                <button class="product-btn buy-btn">BUY NOW</button>
+                <button class="product-btn cart-btn">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="deatil-des">
+        <h1 class="section-tilte">DETAILS</h1>
+        <p class="des" contenteditable="true" data-placeholder="Details, you can add images using HTML img tag"></p>
+    </section>
+
+    <section class="tag-section">
+        <h1 class="section-tilte">TAGS</h1>
+        <p class="text">enter some tags releted to product this will help in searching the product. Give comma sepereted tags</p>
+        <p class="tags" contenteditable="true" data-placeholder="Details, you can add images using HTML img tag">3 tags atleast</p>
+    </section>
+
+    <div class="btn-wrapper">
+        <button class="product-btn add-product-btn">ADD PRODUCT</button>
+        <button class="product-btn draft-btn">SAVE DRAFT</button>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/add-product.js"></script>
+
+    
+</body>
+</html>
